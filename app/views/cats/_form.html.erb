@@ -1,0 +1,11 @@
+<%= form_for @cat do |form| %>
+  <p><%= @cat.errors.full_messages.inspect %></p>
+
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :no_legs %>
+  <%= form.text_field :no_legs %>
+
+  <%= form.submit %>
+<% end %>
